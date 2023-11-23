@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Pizzeria Roberto Caransebeș</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS
+        ================================================ -->
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<!-- bootstrap.min css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Font-awesome.min css -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- Main Stylesheet -->
+	<link rel="stylesheet" href="css/animate.min.css">
+
+	<link rel="stylesheet" href="css/main.css">
+	<!-- Responsive Stylesheet -->
+	<link rel="stylesheet" href="css/responsive.css">
+	<!-- Js -->
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+	<script>
+		window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')
+	</script>
+	<script src="js/jquery.nav.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+	function toggleTheme() {
+		
+    const body = document.body;
+    const themeToggle = document.getElementById('theme-toggle');
+
+    if (body.classList.contains('dark-mode')) {
+        body.classList.remove('dark-mode');
+        body.classList.add('light-mode');
+        themeToggle.classList.remove('dark-mode');
+        themeToggle.textContent = 'Dark Mode';
+
+        // Schimbă textele în modul light
+        document.querySelectorAll('.dark-text').forEach((element) => {
+            element.classList.remove('dark-text');
+        });
+    } else {
+        body.classList.remove('light-mode');
+        body.classList.add('dark-mode');
+        themeToggle.classList.add('dark-mode');
+        themeToggle.textContent = 'Light Mode';
+
+        // Schimbă textele în modul dark
+        document.querySelectorAll('.light-text').forEach((element) => {
+            element.classList.add('dark-text');
+        });
+    }
+}
+
+	</script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	
+	  gtag('config', 'GA_TRACKING_ID');
+	</script>
+	
+</head>
+
+<body class="dark-mode">
+	<!--
+	header-img start 
+	============================== -->
+	<section id="hero-area">
+		<img class="img-responsive" src="images/header.jpg" alt="">
+	</section>
+	<!--
+    Header start 
+	============================== -->
+	<nav id="navigation">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="block">
+						
+						<nav class="navbar navbar-default">
+							<div class="container-fluid">
+								<!-- Brand and toggle get grouped for better mobile display -->
+								<div class="navbar-header">
+									<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+										data-target="#bs-example-navbar-collapse-1">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+									<a class="navbar-brand" href="#">
+									
+										<h1 class="titlu">Pizzeria Roberto</h1>
+									</a>
+
+								</div>
+
+								<!-- Collect the nav links, forms, and other content for toggling -->
+								<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+									<ul class="nav navbar-nav navbar-right" id="top-nav">
+										<li><a href="#hero-area" class="nav-link"><h5 class="titlu">Acasa</h5></a></li>
+										<li><a href="#about-us" class="nav-link"><h5 class="titlu">Despre noi</h5></a></li>
+										<li><a href="#blog" class="nav-link"><h5 class="titlu">Blog</h5></a></li>
+										<li><a href="#price" class="nav-link"><h5 class="titlu">Meniu</h5></a></li>
+										<li><a href="#subscribe" class="nav-link"><h5 class="titlu">Noutăți</h5></a></li>
+										<li><a href="#contact-us" class="nav-link"><h5 class="titlu">Contact</h5></a></li>
+									</ul>
+								</div><!-- /.navbar-collapse -->
+							</div><!-- /.container-fluid -->
+						</nav>
+					</div>
+				</div><!-- .col-md-12 close -->
+			</div><!-- .row close -->
+		</div><!-- .container close -->
+	</nav><!-- header close -->
+	<!--
+    Slider start
+    ============================== -->
+	<section id="slider">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="block wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+						<div class="title">
+							<button id="theme-toggle" onclick="toggleTheme()">
+								Dark Mode
+							</button>
+							
+							<br>
+							<br>
+							<h3>Retetele <span>noastre celebre</span></h3>
+							<br>
+							
+							<form class="navbar-form" role="search">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Caută...">
+								</div>
+								<button type="submit" class="btn btn-default">Caută</button>
+							</form>
+						</div>
+						<div id="owl-example" class="owl-carousel">
+							<div>
+								<img class="img-responsive" src="images/slider/slider-img-1.jpg" alt="">
+							</div>
+							<div>
+								<img class="img-responsive" src="images/slider/slider-img-2.jpg" alt="">
+							</div>
+							<div>
+								<img class="img-responsive" src="images/slider/slider-img-3.jpg" alt="">
+							</div>
+							<div>
+								<img class="img-responsive" src="images/slider/slider-img-4.jpg" alt="">
+							</div>
+							<div>
+								<img class="img-responsive" src="images/slider/slider-img-1.jpg" alt="">
+							</div>
+							<div>
+								<img class="img-responsive" src="images/slider/slider-img-2.jpg" alt="">
+							</div>
+							<div>
+								<img class="img-responsive" src="images/slider/slider-img-3.jpg" alt="">
+							</div>
+							<div>
+								<img class="img-responsive" src="images/slider/slider-img-4.jpg" alt="">
+							</div>
+
+						</div>
+					</div>
+				</div><!-- .col-md-12 close -->
+			</div><!-- .row close -->
+		</div><!-- .container close -->
+		<div id="video-container" class="video">
+			<br>
+			<br>
+			<div id="video-container" class="centered-video" style="display: flex; justify-content: center; align-items: center; height: 40	vh;">
+				
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/hD-q5awwkt4" frameborder="0" allowfullscreen></iframe>
+			</div>
+			
+
+		</div>
+
+
+
+
+
+
+
+	</section><!-- slider close -->
+	<!--
+    about-us start
+    ============================== -->
+	<section id="about-us">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="block">
+						<br>
+						<img class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms" src="images/cooker-img.png"
+							alt="cooker-img" >
+						<h1 class="heading wow fadeInUp" data-wow-duration="400ms" data-wow-delay="500ms">
+							<span>La Noi</span> </br> Găsești cea mai buna mancare din <span>Caransebeș</span>
+						</h1>
+						<p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="600ms">Lorem ipsum dolor sit
+							amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+							magna aliqua. Ut enim </br> ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+							ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </br>voluptate
+							velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p>
+					</div>
+				</div><!-- .col-md-12 close -->
+			</div><!-- .row close -->
+		</div><!-- .containe close -->
+	</section><!-- #call-to-action close -->
+	<!--
+    blog start
+    ============================ -->
+	<section id="blog">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="block">
+						<h1 class="heading">Ultimele <span>postari</span> de pe  <span>Blog</span></h1>
+						<ul>
+							<li class="wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="300ms">
+								<div class="blog-img">
+									<img src="images/blog/blog-img-1.jpg" alt="blog-img">
+								</div>
+								<div class="content-right">
+									<h3>Placinta de pui </h3>
+									<p>Preparata in Romania, de bucatari deosebiti si priceputi, super delicios si gustos...
+									</p>
+								</div>
+							</li>
+							<li class="wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="400ms">
+								<div class="blog-img">
+									<img src="images/blog/blog-img-2.jpg" alt="blog-img">
+								</div>
+								<div class="content-right">
+									<h3>Clatite banatene</h3>
+									<p>Preparata in Romania, de bucatari deosebiti si priceputi, super delicios si gustos...
+									</p>
+								</div>
+							</li>
+							<li class="wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="500ms">
+								<div class="content-left">
+									<h3>Antricot de vită</h3>
+									<p>Preparata in Romania, de bucatari deosebiti si priceputi, super delicios si gustos...
+									</p>
+								</div>
+								<div class="blog-img-2">
+									<img src="images/blog/blog-img-3.jpg" alt="blog-img">
+								</div>
+							</li>
+							<li class="wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="600ms">
+								<div class="content-left">
+									<h3>Platou Românesc</h3>
+									<p>Preparata in Romania, de bucatari deosebiti si priceputi, super delicios si gustos...
+									</p>
+								</div>
+								<div class="blog-img-2">
+									<img src="images/blog/blog-img-4.jpg" alt="blog-img">
+								</div>
+							</li>
+							<li class="wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="700ms">
+								<div class="blog-img">
+									<img src="images/blog/blog-img-5.jpg" alt="blog-img">
+								</div>
+								<div class="content-right">
+									<h3>Clătite cu gem</h3>
+									<p>Preparata in Romania, de bucatari deosebiti si priceputi, super delicios si gustos...
+									</p>
+								</div>
+							</li>
+							<li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="800ms">
+								<div class="blog-img">
+									<img src="images/blog/blog-img-6.jpg" alt="blog-img">
+								</div>
+								<div class="content-right">
+									<h3>Salată Caesar</h3>
+									<p>Preparata in Romania, de bucatari deosebiti si priceputi, super delicios si gustos...
+									</p>
+								</div>
+							</li>
+						</ul>
+							<div class="button">
+						<a class="btn btn-default btn-more-info wow bounceIn" data-wow-duration="500ms" data-wow-delay="1200ms"
+							href="#" role="button">Mai multe</a>
+							</div>
+					</div>
+				</div><!-- .col-md-12 close -->
+			</div><!-- .row close -->
+		</div><!-- .containe close -->
+	</section><!-- #blog close -->
+	<!--
+    price start
+    ============================ -->
+	<section id="price">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="block">
+						<h1 class="heading wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms"><span>MENIUL</span>
+							<span>NOSTRU</span><span> și </span><span>PRETURI</span></h1>
+						<p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">Pizzeria Roberto vă întâmpină într-un mediu plăcut și primitor, perfect pentru a vă bucura de o cină romantică în doi, o masă în familie sau chiar o seară distractivă cu prietenii. Ambianța este una relaxantă, cu decor italian autentic, iar personalul nostru calificat și prietenos vă va face să vă simțiți ca acasă. </p>
+						<div class="pricing-list">
+							<div class="title">
+								<h3>Featured <span>on the week</span></h3>
+							</div>
+							<ul>
+								<li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
+									<div class="item">
+										<div class="item-title">
+											<h2>Pizza Roberto</h2>
+											<div class="border-bottom"></div>
+											<span>RON 30.00</span>
+										</div>
+										<p>aluat, sos rosii, mozzarella, sunca, ciuperci, ardei gras, ceapa, cabanos, salam, masline, rosii, oregano, ulei masline</p>
+									</div>
+								</li>
+								<li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">
+									<div class="item">
+										<div class="item-title">
+											<h2>Piept de pui Bănățean</h2>
+											<div class="border-bottom"></div>
+											<span>RON 27.00</span>
+										</div>
+										<p>piept de pui, sunca, ciuperci, cartofi copti, sos alb</p>
+									</div>
+								</li>
+								<li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+									<div class="item">
+										<div class="item-title">
+											<h2>Salată Caesar </h2>
+											<div class="border-bottom"></div>
+											<span>RON 24.00</span>
+										</div>
+										<p>varza, morcov, rucola, crutoane, parmezan, dresing</p>
+									</div>
+								</li>
+								<li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="600ms">
+									<div class="item">
+										<div class="item-title">
+											<h2>Paste Carbonara</h2>
+											<div class="border-bottom"></div>
+											<span>RON 30.00</span>
+										</div>
+										<p>varza, morcov, rucola, crutoane, parmezan, dresing</p>
+									</div>
+								</li>
+								<li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="700ms">
+									<div class="item">
+										<div class="item-title">
+											<h2>Steak de vită cu garnitură de cartofi aurii</h2>
+											<div class="border-bottom"></div>
+											<span>RON 50.00</span>
+										</div>
+										<p>muschi de vita pe pat de rucola si parmezan</p>
+									</div>
+								</li>
+								<li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="800ms">
+									<div class="item">
+										<div class="item-title">
+											<h2>Papanași cu gem</h2>
+											<div class="border-bottom"></div>
+											<span>RON 20.00</span>
+										</div>
+										<p>papanasi, gem, smantana</p>
+									</div>
+								</li>
+							</ul>
+							<a class="btn btn-default pull-right wow bounceIn" data-wow-duration="500ms" data-wow-delay="1200ms"
+								href="#" role="button">MAI MULTE</a>
+						</div>
+					</div>
+				</div><!-- .col-md-12 close -->
+			</div><!-- .row close -->
+		</div><!-- .containe close -->
+	</section><!-- #price close -->
+	<section id="daily-special">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 id="special-title">Specialul Zilei</h2>
+					<img id="special-image" src="" alt="Specialul Zilei">
+					<p id="special-description"></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!--
+    subscribe start
+    ============================ -->
+	<section id="subscribe">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="block">
+						<h1 class=" heading wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms"> CONTACTEAZĂ-NE
+							 </h1>
+						<p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">Trimite-ne orice sugestie, iar noi vom reveni cu un raspuns numaidecat! </p>
+						<form class="form-inline">
+							<div class="form-group">
+								<div class="input-group">
+									<input type="email" class="form-control" id="exampleInputAmount"
+										placeholder="Introduceti email pentru a va abona...">
+									<div class="input-group-addon">
+										<button class="btn btn-default" type="submit">abonare</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div><!-- .col-md-12 close -->
+			</div><!-- .row close -->
+		</div><!-- .containe close -->
+	</section><!-- #subscribe close -->
+	<button id="help-btn" class="btn-help">Help</button>
+	<button id="up-down-btn" class="btn-up-down">Up/Down</button>
+
+	<!--
+    CONTACT US  start
+    ============================= -->
+	<section id="contact-us">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="block">
+						<h1 class="heading wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+							<span>CONTACTEAZĂ-NE</span></h1>
+						<h3 class="title wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">Inregistrează-te pentru
+							<span>Alerte pe email</span> </h3>
+							<form id="contactForm">
+								<div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="600ms">
+								  <input type="text" class="form-control" id="fullname" required placeholder="Scrie numele complet...">
+								</div>
+								<div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="800ms">
+								  <input type="email" class="form-control" id="email" required placeholder="Scrie adresa de e-mail...">
+								</div>
+								<div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1000ms">
+								  <textarea class="form-control" id="message" rows="3" required placeholder="Scrie mesajul tau aici..."></textarea>
+								</div>
+								<button type="submit" class="btn btn-default wow bounceIn" data-wow-duration="500ms" data-wow-delay="1300ms">Trimite mesaj</button>
+							  </form>
+							  
+					</div>
+				</div><!-- .col-md-12 close -->
+			</div><!-- .row close -->
+		</div><!-- .container close -->
+	</section><!-- #contact-us close -->
+	<!--
+    footer  start
+    ============================= -->
+	<section id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="block wow fadeInLeft" data-wow-delay="200ms">
+						<h1>INFORMATII <span>CONTACT</span></h1>
+						<div class="info">
+							<ul>
+								<li>
+									<h4><i class="fa fa-phone"></i>Telefon</h4>
+									<p>(+40) 774 606 404- (+40) 324 256 89</p>
+
+								</li>
+								<li>
+									<h4><i class="fa fa-map-marker"></i>Adresa</h4>
+									<p>Caransebeș, Romania</p>
+								</li>
+								<li>
+									<h4><i class="fa fa-envelope"></i>E mail</h4>
+									<p>pizzeriaroberto@gmail.com</p>
+
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- .col-md-4 close -->
+				<div class="col-md-4">
+					<div class="block wow fadeInLeft" data-wow-delay="700ms">
+						<h1>UlTIMELE <span>POSTARI DE PE BLOG</span></h1>
+						<div class="blog">
+							<ul>
+								<li>
+									<h4><a href="#">Noiembrie 9-2014</a></h4>
+									<p>Am adaugat noi retete delicioase in meniul nostru. Haide sa le incerci!
+										</p>
+								</li>
+								<li>
+									<h4><a href="#">Septembrie 8-2014</a></h4>
+									<p>Am adaugat noi retete delicioase in meniul nostru. Haide sa le incerci!
+										</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- .col-md-4 close -->
+				<div class="col-md-4">
+					<div class="block wow fadeInLeft" data-wow-delay="1100ms">
+						<div class="gallary">
+							<h1>GALERIE <span>DE POZE	</span></h1>
+							<ul>
+								<li>
+									<a href="#"><img src="images/photo/photo-1.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/photo/photo-2.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/photo/photo-3.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/photo/photo-4.jpg" alt=""></a>
+								</li>
+							</ul>
+						</div>
+						<div class="social-media-link">
+							<h3>Follow <span>US</span></h3>
+							<ul>
+								
+								<li>
+									<a href="#">
+										<i class="fa fa-facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-youtube"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-instagram"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- .col-md-4 close -->
+			</div><!-- .row close -->
+		</div><!-- .containe close -->
+	</section><!-- #footer close -->
+	<!--
+    footer-bottom  start
+    ============================= -->
+	<footer id="footer-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12">
+					<div class="block">
+						<p>Copyright &copy; 2014 - All Rights Reserved. Aplicatie creata de <a
+								href="https://github.com/catacoman1">Catalin Coman</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			var dayOfWeek = new Date().getDay();
+			var title = document.getElementById('special-title');
+			var image = document.getElementById('special-image');
+			var description = document.getElementById('special-description');
+	
+			switch(dayOfWeek) {
+				case 0: // Sunday
+					title.textContent = 'Pizza Margherita';
+					image.src = 'images/pizza_margherita.jpg';
+					description.textContent = 'Descriere pentru Pizza Margherita.';
+					break;
+				case 1: // Monday
+					title.textContent = 'Pizza Quattro Formaggi';
+					image.src = 'images/pizza_margherita.jpg';
+					description.textContent = 'Descriere pentru Pizza Quattro Formaggi.';
+					break;
+				case 2: //Tuesday
+				title.textContent = 'Pizza Prosciutto';
+					image.src = 'images/pizza_margherita.jpg';
+					description.textContent = 'Descriere pentru Pizza Margherita.';
+					break;
+				case 3: //Wednesday
+				title.textContent = 'Pizza Diavola';
+					image.src = 'images/pizza_margherita.jpg';
+					description.textContent = 'Descriere pentru Pizza Margherita.';
+					break;
+					case 4: //Thursday
+				title.textContent = 'Pizza Margherita';
+					image.src = 'images/pizza_margherita.jpg';
+					description.textContent = 'Alegerea noastră de astăzi pentru tine este PIZZA MARGHERITA. Atent pregătită de bucătarii noștrii, aceasta reprezintă o masă delicioasă pentru tine.';
+					break;
+					case 5: //Friday
+				title.textContent = 'Pizza Margherita';
+					image.src = 'images/pizza_margherita.jpg';
+					description.textContent = 'Descriere pentru Pizza Margherita.';
+					break;
+					case 6: //Saturday
+				title.textContent = 'Pizza Quattro Formaggi';
+					image.src = 'images/pizza_margherita.jpg';
+					description.textContent = 'Descriere pentru Pizza Margherita.';
+					break;
+			}
+		});
+	</script>
+	<script>
+		document.getElementById('up-down-btn').addEventListener('click', function() {
+			if (window.scrollY === 0) {
+				window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+			} else {
+				window.scrollTo({ top: 0, behavior: 'smooth' });
+			}
+		});
+	</script>
+	
+	
+</body>
+
+</html>
